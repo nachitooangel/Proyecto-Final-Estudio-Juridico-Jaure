@@ -1,0 +1,134 @@
+.conteiner {
+    margin: 0px;
+    background-color: burlywood;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 200px 40px 200px 200px 150px 150px 60px;
+    }
+    .navegador {
+        background-color: rgb(83, 47, 19);
+        grid-column: 1/6;
+    }
+    .conteinerList {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: center;
+        list-style: none;
+    }
+    .navegadorItem {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-family: 
+    }
+    .ramas {
+        display: flex;
+        background-color: black;
+        grid-column: 1/6;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .rama {
+        color: white;
+    }
+    .somos {
+        display: flex;
+        grid-column: 1/6;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 15px 0px 15px;
+    }
+    .titulo1 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+        text-decoration: overline underline;
+    }
+    .historia {
+        display: flex;
+        grid-column: 1/6;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 15px 0px 15px;
+    }
+    .texto {
+        color: rgb(192, 0, 0);
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+        border: rgb(192, 0, 0) double 5px;
+        background-color:cyan;
+    }
+    .marcas {
+        display: flex;
+        grid-column: 1/6;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 15px 0px 15px;
+    }
+    .empresas {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-decoration: overline underline;
+    }
+    .logos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        grid-column: 1/6;
+        justify-content: space-around;
+        align-items: center;
+        margin: 15px 15px 0px 15px;
+    }
+    .marcas2 {
+        height: 100px;
+        padding: 5px;
+        margin: 5px;
+    }
+    #nike {
+        margin: 0px 50px 20px 20px;
+        opacity: 0.6;
+    }
+    #mcd {
+        margin: 0px 50px 20px 50px;
+        opacity: 0.6;
+    }
+    #ic {
+        margin: 0px 50px 20px 50px;
+        opacity: 0.6;
+    }
+    #coca {
+        margin: 0px 20pxpx 20px 50px;
+        opacity: 0.6;
+    }
+    .piePagina {
+        display: flex;
+        grid-column: 1/6;
+        justify-content: start;
+        align-items: center;
+        background-color: rgb(83, 47, 19);
+        flex-wrap: nowrap;
+    }
+    .logoWsp {
+        height: 35px;
+    }
+    .logoIg {
+        height: 35px;
+    }
+    .logoFcb {
+        height: 50px;
+        position: relative;
+        top: 7px;
+    }
+    .infoRedes {
+        position: relative;
+        bottom: 12px;
+    }
