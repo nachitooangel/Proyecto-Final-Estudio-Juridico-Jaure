@@ -1,4 +1,4 @@
-.conteiner {
+.informacion {
     margin: 0px;
     background-color: burlywood;
     width: 100%;
@@ -34,7 +34,7 @@
     .rama {
         color: white;
     }
-    .titulo1 {
+    .title1 {
         display: flex;
         grid-column: 1/6;
         grid-row: 3/4;
@@ -42,7 +42,7 @@
         align-items: center;
         flex-wrap: nowrap;
     }
-    .titulo {
+    .title {
         text-decoration: overline underline;
         margin-left: 3px;
     }
@@ -70,7 +70,7 @@
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
         margin-left: 3px;
     }
-    .consulta {
+    .consultaGratuita {
         display: flex;
         justify-content: center;
         grid-column: 1/3;

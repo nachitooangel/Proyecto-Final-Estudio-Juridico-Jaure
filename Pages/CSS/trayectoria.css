@@ -1,4 +1,4 @@
-.conteiner {
+.trayectoria {
     margin: 0px;
     background-color: burlywood;
     width: 100%;
@@ -42,7 +42,7 @@
         align-items: center;
         margin: 15px 15px 0px 15px;
     }
-    .titulo1 {
+    .titular1 {
         font-size: 25px;
         text-align: center;
         margin-top: 50px;

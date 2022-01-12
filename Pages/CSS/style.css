@@ -1,4 +1,4 @@
-.conteiner {
+.home {
     margin: 0px;
     background-color: burlywood;
     width: 100%;
@@ -114,3 +114,339 @@
         position: relative;
         bottom: 12px;
     }
+
+
+    .informacion {
+        margin: 0px;
+        background-color: burlywood;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 200px 40px 50px 160px 140px 40px 500px 60px;
+        }
+        
+        .title1 {
+            display: flex;
+            grid-column: 1/6;
+            grid-row: 3/4;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .title {
+            text-decoration: overline underline;
+            margin-left: 3px;
+        }
+        .localidades {
+            display: flex;
+            grid-column: 1/3;
+            grid-row: 4/5;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 18px;
+            display: inline;
+            margin-left: 3px;
+        }
+        .horario {
+            display: flex;
+            grid-column: 1/4;
+            grid-row: 5/6;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: nowrap;
+        }    
+        .horarios {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            margin-left: 3px;
+        }
+        .consultaGratuita {
+            display: flex;
+            justify-content: center;
+            grid-column: 1/3;
+            grid-row: 6/7;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        .mapas {
+            display: flex;
+            grid-column: 1/4;
+            grid-row: 7/8;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .maps {
+            border-radius: 5%;
+            border: black 3px solid;
+            margin-left: 3px;
+        }
+        
+
+        .trayectoria {
+            margin: 0px;
+            background-color: burlywood;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 200px 40px 200px 200px 150px 150px 60px;
+            }
+            .somos {
+                display: flex;
+                grid-column: 1/6;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 15px 15px 0px 15px;
+            }
+            .titular1 {
+                font-size: 25px;
+                text-align: center;
+                margin-top: 50px;
+                text-decoration: overline underline;
+            }
+            .historia {
+                display: flex;
+                grid-column: 1/6;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0px 15px 0px 15px;
+            }
+            .texto {
+                color: rgb(192, 0, 0);
+                font-size: 20px;
+                text-align: center;
+                margin-top: 15px;
+                border: rgb(192, 0, 0) double 5px;
+                background-color:cyan;
+            }
+            .marcas {
+                display: flex;
+                grid-column: 1/6;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 15px 0px 15px;
+            }
+            .empresas {
+                font-size: 25px;
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                text-decoration: overline underline;
+            }
+            .logos {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                grid-column: 1/6;
+                justify-content: space-around;
+                align-items: center;
+                margin: 15px 15px 0px 15px;
+            }
+            .marcas2 {
+                height: 100px;
+                padding: 5px;
+                margin: 5px;
+            }
+            #nike {
+                margin: 0px 50px 20px 20px;
+                opacity: 0.6;
+            }
+            #mcd {
+                margin: 0px 50px 20px 50px;
+                opacity: 0.6;
+            }
+            #ic {
+                margin: 0px 50px 20px 50px;
+                opacity: 0.6;
+            }
+            #coca {
+                margin: 0px 20pxpx 20px 50px;
+                opacity: 0.6;
+            }
+            
+
+            .nosotros {
+                margin: 0px;
+                background-color: burlywood;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 200px 40px 300px 230px 60px;
+                }
+                .relleno {
+                    display: flex;
+                    grid-column: 1/3;
+                    grid-row: 3/5;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .texto {
+                    margin-left: 3px;
+                }
+                .imagenes1 {
+                    display: flex;
+                    grid-column: 3/6;
+                    grid-row: 3/4;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .imagenes2 {
+                    display: flex;
+                    grid-column: 3/6;
+                    grid-row: 4/5;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+                .img1 {
+                    height: 230px;
+                    margin: 2px;
+                }
+                .imagenLarga {
+                    height: 225px;
+                }
+
+
+                .equipo {
+                    margin: 0px;
+                    background-color: burlywood;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    grid-template-rows: 200px 40px 120px 160px 40px 160px 40px 160px 40px 160px 40px 60px;
+                    }
+                    .abogados {
+                        display: flex;
+                        grid-column: 1/6;
+                        grid-row: 3/4;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .miembros {
+                        font-size: 20px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    }
+                    .fotos1 {
+                        display: flex;
+                        grid-column: 1/6;
+                        grid-row: 4/5;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .abogados1 {
+                        border: black solid 2px;
+                        border-radius: 50%;
+                        height: 150px;
+                        width: auto;
+                    }
+                    .names1 {
+                        display: flex;
+                        grid-column: 1/6;
+                        grid-row: 5/6;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .nombres1 {
+                        font-family:Georgia, 'Times New Roman', Times, serif ;
+                        font-weight: bolder;
+                        display: inline;
+                        font-size: 12px;
+                        font-style: italic;
+                    }
+                    .fotos2 {
+                        display: flex;
+                        grid-column: 1/6;
+                        grid-row: 6/7;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .abogados2 {
+                        border: black solid 2px;
+                        border-radius: 50%;
+                        height: 150px;
+                        width: auto;
+                    } 
+                    .names2 {
+                        display: flex;
+                        grid-column: 1/6;
+                        grid-row: 7/8;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .nombres2 {
+                        font-family:Georgia, 'Times New Roman', Times, serif ;
+                        font-weight: bolder;
+                        display: inline;
+                        font-size: 12px;
+                        font-style: italic;
+                    }
+                    .fotos3 {
+                        display: flex;
+                        grid-column: 1/6;
+                        grid-row: 8/9;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .abogados3 {
+                        border: black solid 2px;
+                        border-radius: 50%;
+                        height: 150px;
+                        width: auto;
+                    } 
+                    .names3 {
+                        display: flex;
+                        grid-column: 1/6;
+                        grid-row: 9/10;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .nombres3 {
+                        font-family:Georgia, 'Times New Roman', Times, serif ;
+                        font-weight: bolder;
+                        display: inline;
+                        font-size: 12px;
+                        font-style: italic;
+                    }
+                    .fotos4 {
+                        display: flex;
+                        grid-column: 1/6;
+                        grid-row: 10/11;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .abogados4 {
+                        border: black solid 2px;
+                        border-radius: 50%;
+                        height: 150px;
+                        width: auto;
+                    } 
+                    .names4 {
+                        display: flex;
+                        grid-column: 1/6;
+                        grid-row: 11/12;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    .nombres4 {
+                        font-family:Georgia, 'Times New Roman', Times, serif ;
+                        font-weight: bolder;
+                        display: inline;
+                        font-size: 12px;
+                        font-style: italic;
+                    }
+                   
+               
