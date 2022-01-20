@@ -1,708 +1,191 @@
 .home {
-    margin: 0px;
-    background-color: burlywood;
-    display: grid;
-    grid-template-rows: 90px 10px 100px 100px 20px 320px 100px 60px;
+    background-color: black;
+    grid-template-rows: 300px 100px;
     grid-template-areas: 
     "nav"
-    "ramas"
-    "foto"
-    "dicho"
-    "cita"
-    "form"
-    "pie";
-    }
-    .navegador {
-        padding-left: 0px;
-        background-color: rgb(83, 47, 19);
-        grid-area: "nav";
-    }
-    .conteinerList {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        list-style: none;
-    }
-    .logo {
-        margin: 0px;
-        height: 70px;
-    }
-    .navegadorItem {
-        margin: 0px;
-        padding: 0px;
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-size: 9px; 
-    }
-    .ramas {
-        display: flex;
-        background-color: black;
-        grid-area: "ramas";
-        justify-content: space-around;
-        align-items: center;
-    }
-    .rama {
-        color: white;
-        font-size: 6px;
-    }    
-    .foto {
-        display: flex;
-        grid-area: "foto";
-        justify-content: start;
-        align-items: center;
-        margin-left: 3px;
-    }
-    .foto1 {
-        height: 80px;
-        border-radius: 3px;
-        border: double black 2px;
-    }
-    .dicho {
-        display: flex;
-        grid-area: "dicho";
-        justify-content: start;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-left: 3px;
-    }
-    .cita {
-        font-size: 15px;
-    }
-    .interprete {
-        display: flex;
-        grid-area: "cita";
-        justify-content: start;
-        align-items: center;
-        margin-left: 3px;
-    }
-    .interpretador {
-        font-size: 12px;
-    }
-    .consulta {
-        display: flex;
-        grid-area: "form";
-        justify-content: start;
-        align-items: flex-start;
-        height: 150px;
-        margin-left: 3px;
-    }
-    .formulario {
-        border: 3px black dashed;
-        background-color: rgb(83, 47, 19);
-        text-decoration-line: underline;
-        display: inline;
-        font-size: 10px;
-        height: 360px;
-        width: 400px;
-    }
-    .titulo {
-        margin: 10px 0px 25px 10px;
-        font-size: 10px;
-    }
-    .formItem {
-        margin: 25px;
-        text-decoration: none;
-    }
-    .opciones {
-        text-decoration: none;
-        margin-right: 10px;
-        font-weight: bold;
-        font-size: 10px;
-    }
-    .piePagina {
-        display: flex;
-        grid-area: "pie";
-        justify-content: start;
-        align-items: center;
-        background-color: rgb(83, 47, 19);
-    }
-    .logoWsp {
-        height: 18px;
-    }
-    .logoIg {
-        height: 18px;
-    }
-    .logoFcb {
-        height: 26px;
-        position: relative;
-        top: 4px;
-    }
-    .infoRedes {
-        position: relative;
-        bottom: 5px;
-        font-size: 10px;
-    }
+    "intro"
+    "carrusel"
+    "info"
+    "maps"
+    ;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    grid-area: "nav";
+    background-color: transparent;
+}
+.titular {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url(./descarga.jpg);
+}
+.nombre {
+    font-size: 45px;
+    padding: 5px auto;
+    margin-left: 15px;
+    font-family: 'Chicle', cursive;
+    color: #ffc107;
+    background-color: black;
+    display: inline;
+}
+.autor {
+    font-size: 15px;
+    padding: 5px 10px 5px 5px;
+    margin-left: 18px;
+    color: #ffc107;
+    background-color: black;
+    font-family: 'Chicle', cursive;
+}
+.imagenNav {
+    border-radius: 5px;
+    height: 30px;
+}
+.intro {
+    display: flex;
+    grid-area: "intro";
+    justify-content: space-around;
+    align-items: center;
+}
+.intro h2 {
+    color: #ffc107;
+    font-family: 'Chicle', cursive;
+    margin: 15px;
+} 
+.carrusel {
+    grid-area: "carrusel";
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.infoText {
+    margin: 10px;
+    color: #ffc107;
+    font-family: 'Chicle', cursive;
+    font-size: 25px;
+}
+.logos {
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.logo1 {
+    height: 80px;
+    opacity: 0.5;
+}
+.logo2 {
+    height: 120px;
+    position: relative;
+    bottom: 18px;
+    opacity: 0.5;
+}
+.logo3 {
+    height: 80px;
+    opacity: 0.5;
+}
+.rellenoDirec {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    grid-area: "maps";
+    justify-content: center;
+    align-items: center;
+}
+.textoDirec {
+    color: #ffc107;
+    font-family: 'Chicle', cursive;
+    margin: 10px;
+    font-size: 20px;
+}
+.tituloDirec {
+    color: #ffc107;
+    font-family: 'Chicle', cursive;
+    margin: 10px;
+    font-size: 30px;
+    text-decoration: underline overline;
+}
+.direc {
+    color: #ffc107;
+}
+.contacto {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+}
+.redes {
+
+}
+.usuario {
+    color: #ffc107;
+    font-size: 20px;
+    position: relative;
+    left: 145px;
+}
+.contactanos {
+    color: #ffc107;
+    margin: 22px;
+    font-family: 'Chicle', cursive;
+}
+.imgRed {
+    position: relative;
+    left: 50px;
+}
+
+.sneakers {
+    background-color: transparent;
+    background-image: url(./fondo.jpg);
+    background-size: 100%;
+}
+.row {
+    margin: 35px 0px 35px 0px;
+}
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    margin: 20px;
+}
+.titulo1 {
+    font-family: 'Chicle', cursive;
+    font-size: 70px;
+}
+.texto1 {
+    font-family: 'Chicle', cursive;
+    font-size: 50px;
+}
 
 
-    .informacion {
-        margin: 0px;
-        background-color: burlywood;
-        width: 100%;
-        display: grid;
-        grid-template-rows: 90px 10px 30px 80px 60px 30px 400px 60px;
-        grid-template-areas:
-        "nav"
-        "ramas"
-        "titulo"
-        "ubicaciones"
-        "horarios"
-        "consulta"
-        "maps"
-        "pie"
-        ;
-        }
-        .navegador {
-            padding-left: 0px;
-            background-color: rgb(83, 47, 19);
-            grid-area: "nav";
-        }
-        .conteinerList {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            list-style: none;
-        }
-        .logo {
-            margin: 0px;
-            height: 70px;
-        }
-        .navegadorItem {
-            margin: 0px;
-            padding: 0px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 9px; 
-        }
-        .ramas {
-            display: flex;
-            background-color: black;
-            grid-area: "ramas";
-            justify-content: space-around;
-            align-items: center;
-        }
-        .rama {
-            color: white;
-            font-size: 6px;
-        }
-        .title1 {
-            display: flex;
-            grid-area: "titulo";
-            justify-content: center;
-            align-items: center;
-            flex-wrap: nowrap;
-        }
-        .title {
-            text-decoration: overline underline;
-            margin-left: 3px;
-            font-size: 10px;
-        }
-        .localidades {
-            display: flex;
-            grid-area: "ubicaciones";
-            justify-content: start;
-            align-items: center;
-            flex-wrap: nowrap;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 10px;
-            display: inline;
-            margin-left: 3px;
-        }
-        .horario {
-            display: flex;
-            grid-area: "horarios";
-            justify-content: start;
-            align-items: center;
-            flex-wrap: nowrap;
-        }    
-        .horarios {
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-            margin-left: 3px;
-            font-size: 10px;
-        }
-        .consultaGratuita {
-            display: flex;
-            justify-content: center;
-            grid-area: "consulta";
-            align-items: flex-start;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 12px;
-            text-decoration: underline;
-        }
-        .mapas {
-            display: flex;
-            grid-area: "maps";
-            justify-content: center;
-            align-items: center;
-            flex-wrap: nowrap;
-            height: 300px;
-            width: 422px;
-            margin-top: 10px;
-        }
-        .maps {
-            border-radius: 5%;
-            border: black 3px solid;
-            margin-left: 3px;
-            height: 300px;
-        }
-       .piePagina {
-                    display: flex;
-                    grid-area: "pie";
-                    justify-content: start;
-                    align-items: center;
-                    background-color: rgb(83, 47, 19);
-                }
-                .logoWsp {
-                    height: 18px;
-                }
-                .logoIg {
-                    height: 18px;
-                }
-                .logoFcb {
-                    height: 26px;
-                    position: relative;
-                    top: 4px;
-                }
-                .infoRedes {
-                    position: relative;
-                    bottom: 5px;
-                    font-size: 10px;
-                }
+@media (min-width: 1250px) {
+    .logo1 {
+        height: 90px;
+    }
+    .logo2 {
+        height: 130px;
+    }
+    .logo3 {
+        height: 90px;
+    }
+    .infoText {
+        font-size: 20px;
+    }
+    .nombre {
+        font-size: 70px;
+    }
+    .autor {
+        font-size: 25px;
+    }
+}
 
 
-        .trayectoria {
-            margin: 0px;
-            background-color: burlywood;
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: 200px 40px 200px 200px 150px 150px 60px;
-            }
-            .navegador {
-                padding-left: 0px;
-                background-color: rgb(83, 47, 19);
-                grid-area: "nav";
-            }
-            .conteinerList {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                list-style: none;
-            }
-            .logo {
-                margin: 0px;
-                height: 70px;
-            }
-            .navegadorItem {
-                margin: 0px;
-                padding: 0px;
-                text-decoration: none;
-                color: black;
-                font-weight: bold;
-                font-size: 9px; 
-            }
-            .ramas {
-                display: flex;
-                background-color: black;
-                grid-area: "ramas";
-                justify-content: space-around;
-                align-items: center;
-            }
-            .rama {
-                color: white;
-                font-size: 6px;
-            }
-            .somos {
-                display: flex;
-                grid-column: 1/6;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                margin: 15px 15px 0px 15px;
-            }
-            .titular1 {
-                font-size: 25px;
-                text-align: center;
-                margin-top: 50px;
-                text-decoration: overline underline;
-            }
-            .historia {
-                display: flex;
-                grid-column: 1/6;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                margin: 0px 15px 0px 15px;
-            }
-            .texto {
-                color: rgb(192, 0, 0);
-                font-size: 20px;
-                text-align: center;
-                margin-top: 15px;
-                border: rgb(192, 0, 0) double 5px;
-                background-color:cyan;
-            }
-            .marcas {
-                display: flex;
-                grid-column: 1/6;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                margin: 20px 15px 0px 15px;
-            }
-            .empresas {
-                font-size: 25px;
-                text-align: center;
-                margin-top: 50px;
-                margin-bottom: 50px;
-                text-decoration: overline underline;
-            }
-            .logos {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                grid-column: 1/6;
-                justify-content: space-around;
-                align-items: center;
-                margin: 15px 15px 0px 15px;
-            }
-            .marcas2 {
-                height: 100px;
-                padding: 5px;
-                margin: 5px;
-            }
-            #nike {
-                margin: 0px 50px 20px 20px;
-                opacity: 0.6;
-            }
-            #mcd {
-                margin: 0px 50px 20px 50px;
-                opacity: 0.6;
-            }
-            #ic {
-                margin: 0px 50px 20px 50px;
-                opacity: 0.6;
-            }
-            #coca {
-                margin: 0px 20pxpx 20px 50px;
-                opacity: 0.6;
-            }
-            .piePagina {
-                    display: flex;
-                    grid-area: "pie";
-                    justify-content: start;
-                    align-items: center;
-                    background-color: rgb(83, 47, 19);
-                }
-                .logoWsp {
-                    height: 18px;
-                }
-                .logoIg {
-                    height: 18px;
-                }
-                .logoFcb {
-                    height: 26px;
-                    position: relative;
-                    top: 4px;
-                }
-                .infoRedes {
-                    position: relative;
-                    bottom: 5px;
-                    font-size: 10px;
-                }
-            
 
-            .nosotros {
-                margin: 0px;
-                background-color: burlywood;
-                display: grid;
-                grid-template-rows: 90px 10px 150px 120px 120px 60px;
-                grid-template-areas: 
-                "nav"
-                "ramas"
-                "texto"
-                "fotos"
-                "foto"
-                "pie";
-                }
-                .navegador {
-                    padding-left: 0px;
-                    background-color: rgb(83, 47, 19);
-                    grid-area: "nav";
-                }
-                .conteinerList {
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    list-style: none;
-                }
-                .logo {
-                    margin: 0px;
-                    height: 70px;
-                }
-                .navegadorItem {
-                    margin: 0px;
-                    padding: 0px;
-                    text-decoration: none;
-                    color: black;
-                    font-weight: bold;
-                    font-size: 9px; 
-                }
-                .ramas {
-                    display: flex;
-                    background-color: black;
-                    grid-area: "ramas";
-                    justify-content: space-around;
-                    align-items: center;
-                }
-                .rama {
-                    color: white;
-                    font-size: 6px;
-                }
-                .relleno {
-                    display: flex;
-                    grid-area: "texto";
-                    justify-content: space-around;
-                    align-items: center;
-                }
-                .texto {
-                    margin-left: 3px;
-                    font-size: 15px;
-                }
-                .imagenes1 {
-                    display: flex;
-                    grid-area: "fotos";
-                    justify-content: space-evenly;
-                    align-items: center;
-                }
-                .imagenes2 {
-                    display: flex;
-                    grid-area: "foto";
-                    justify-content: center;
-                    align-items: flex-start;
-                }
-                .img1 {
-                    height: 112px;
-                }
-                .imagenLarga {
-                    height: 110px;
-                }
-                .piePagina {
-                    display: flex;
-                    grid-area: "pie";
-                    justify-content: start;
-                    align-items: center;
-                    background-color: rgb(83, 47, 19);
-                }
-                .logoWsp {
-                    height: 18px;
-                }
-                .logoIg {
-                    height: 18px;
-                }
-                .logoFcb {
-                    height: 26px;
-                    position: relative;
-                    top: 4px;
-                }
-                .infoRedes {
-                    position: relative;
-                    bottom: 5px;
-                    font-size: 10px;
-                }
 
-                .equipo {
-                    margin: 0px;
-                    background-color: burlywood;
-                    width: 100%;
-                    display: grid;
-                    grid-template-columns: repeat(5, 1fr);
-                    grid-template-rows: 200px 40px 120px 160px 40px 160px 40px 160px 40px 160px 40px 60px;
-                    }
-                    .navegador {
-                        padding-left: 0px;
-                        background-color: rgb(83, 47, 19);
-                        grid-area: "nav";
-                    }
-                    .conteinerList {
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-                        list-style: none;
-                    }
-                    .logo {
-                        margin: 0px;
-                        height: 70px;
-                    }
-                    .navegadorItem {
-                        margin: 0px;
-                        padding: 0px;
-                        text-decoration: none;
-                        color: black;
-                        font-weight: bold;
-                        font-size: 9px; 
-                    }
-                    .ramas {
-                        display: flex;
-                        background-color: black;
-                        grid-area: "ramas";
-                        justify-content: space-around;
-                        align-items: center;
-                    }
-                    .rama {
-                        color: white;
-                        font-size: 6px;
-                    }
-                    .abogados {
-                        display: flex;
-                        grid-column: 1/6;
-                        grid-row: 3/4;
-                        justify-content: space-around;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .miembros {
-                        font-size: 20px;
-                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                    }
-                    .fotos1 {
-                        display: flex;
-                        grid-column: 1/6;
-                        grid-row: 4/5;
-                        justify-content: space-around;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .abogados1 {
-                        border: black solid 2px;
-                        border-radius: 50%;
-                        height: 150px;
-                        width: auto;
-                    }
-                    .names1 {
-                        display: flex;
-                        grid-column: 1/6;
-                        grid-row: 5/6;
-                        justify-content: space-around;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .nombres1 {
-                        font-family:Georgia, 'Times New Roman', Times, serif ;
-                        font-weight: bolder;
-                        display: inline;
-                        font-size: 12px;
-                        font-style: italic;
-                    }
-                    .fotos2 {
-                        display: flex;
-                        grid-column: 1/6;
-                        grid-row: 6/7;
-                        justify-content: space-around;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .abogados2 {
-                        border: black solid 2px;
-                        border-radius: 50%;
-                        height: 150px;
-                        width: auto;
-                    } 
-                    .names2 {
-                        display: flex;
-                        grid-column: 1/6;
-                        grid-row: 7/8;
-                        justify-content: space-around;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .nombres2 {
-                        font-family:Georgia, 'Times New Roman', Times, serif ;
-                        font-weight: bolder;
-                        display: inline;
-                        font-size: 12px;
-                        font-style: italic;
-                    }
-                    .fotos3 {
-                        display: flex;
-                        grid-column: 1/6;
-                        grid-row: 8/9;
-                        justify-content: space-around;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .abogados3 {
-                        border: black solid 2px;
-                        border-radius: 50%;
-                        height: 150px;
-                        width: auto;
-                    } 
-                    .names3 {
-                        display: flex;
-                        grid-column: 1/6;
-                        grid-row: 9/10;
-                        justify-content: space-around;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .nombres3 {
-                        font-family:Georgia, 'Times New Roman', Times, serif ;
-                        font-weight: bolder;
-                        display: inline;
-                        font-size: 12px;
-                        font-style: italic;
-                    }
-                    .fotos4 {
-                        display: flex;
-                        grid-column: 1/6;
-                        grid-row: 10/11;
-                        justify-content: space-around;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .abogados4 {
-                        border: black solid 2px;
-                        border-radius: 50%;
-                        height: 150px;
-                        width: auto;
-                    } 
-                    .names4 {
-                        display: flex;
-                        grid-column: 1/6;
-                        grid-row: 11/12;
-                        justify-content: space-around;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    .nombres4 {
-                        font-family:Georgia, 'Times New Roman', Times, serif ;
-                        font-weight: bolder;
-                        display: inline;
-                        font-size: 12px;
-                        font-style: italic;
-                    }
-                    .piePagina {
-                        display: flex;
-                        grid-area: "pie";
-                        justify-content: start;
-                        align-items: center;
-                        background-color: rgb(83, 47, 19);
-                    }
-                    .logoWsp {
-                        height: 18px;
-                    }
-                    .logoIg {
-                        height: 18px;
-                    }
-                    .logoFcb {
-                        height: 26px;
-                        position: relative;
-                        top: 4px;
-                    }
-                    .infoRedes {
-                        position: relative;
-                        bottom: 5px;
-                        font-size: 10px;
-                    }    
-               
+
