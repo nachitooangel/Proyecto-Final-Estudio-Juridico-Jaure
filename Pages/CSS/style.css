@@ -164,12 +164,31 @@
     bottom: 27px;
 }
 .pie {
+    background-color: black;
     display: grid;
     justify-content: center;
     align-content: center;
+    border-top: white solid 2px;
+}
+.redesSociales {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redSocial {
+    display: grid;
+    flex-direction: row;
+}
+.logoRedes {
+    height: 60px;
+}
+.red {
+    color: white;
+    font-size: 15px;
 }
 .registrado {
-    color: #ffc107;
+    color: white;
     font-size: 18px;
 }
 
@@ -200,6 +219,7 @@
 .accordion {
     margin: 20px;
 }
+
 
 
 @media (min-width: 1250px) {
